@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Menu Cocina Mexicana</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="FF940C">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+
+  <meta name="theme-color" content="#FF940C">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" type="image/png" href="./img/Tacos1.png">
+  <link rel="apple-touch-icon" href="./icono128.png">
+  <link rel="apple-touch-startup-image" href="./icono128.png">
+  <link rel="manifest" href="./manifest.json">
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Cocina Martha Padilla</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Acerca de</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Ordenar</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="./img/Tacos1.jpg" alt="Tacos Martha Padilla" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity-min">
+    <h1 class="w3-xxlarge">Cocina Martha Padilla</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="./img/taqueria.jpg" class="w3-round w3-image " alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Acerca de nosotros</h1><br>
+      <h5 class="w3-center">Tradicion desde 1984</h5>
+      <p class="w3-large">Dicen que el amor por la comida es el amor más sincero, y por una buena razón. Las salidas gastronómicas nos aseguran experiencias donde el placer es protagonista: sabores, texturas, aromas, amigos, amores, familia. Solo usamos lo <span class="w3-tag w3-light-grey">MEJOR</span> que tenemos.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Prueba nuestros antojitos mexicanos preparados por las manos mas talentosas, desde tacos hasta comidas refinadas, tenemos un menu muy extenso que te dara un gran apetito al momento de leer.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Nuestro menu</h1><br>
+      <h4>Torta ahogada</h4>
+      <p class="w3-text-grey">Torta de carnitas bañada en salsa de jitomate $120</p><br>
+    
+      <h4>Gorditas</h4>
+      <p class="w3-text-grey">Gorditas de queso con carne a elegir $40 c/u</p><br>
+    
+      <h4>Empanadas</h4>
+      <p class="w3-text-grey">Empanas rellenas de chile verde con queso $25 c/u</p><br>
+    
+      <h4>Huaraches</h4>
+      <p class="w3-text-grey">Huarache con queso y carne a elegir $35 c/u</p><br>
+    
+      <h4>Carnes a elegir</h4>
+      <p class="w3-text-grey">Carnitas</p>    
+      <p class="w3-text-grey">Carne asada</p> 
+      <p class="w3-text-grey">Carne al pastor</p> 
+      <p class="w3-text-grey">Picadillo</p> 
+
+    </div>
+    
+
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="./img/comidas.jpg" class="w3-round w3-image " alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="peido">
+    <h1>Ordenar</h1><br>
+    <p>Te ofrecemos la oportunidad de pedir desde la app web al dar solo un clic.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Lomas de fatima, calzada de la virgen #485b    cp.84053</b></p>
+    <p>Puedes contactarnos desde nuestro telefono 631-126-4578 o envianos un email a nuestro correo Cocina_P@gmail.com:</p>
+    <form action="pedidos.php" method="POST" >
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nombre" name="IdNombre"></p>
+      <p><input class="w3-input w3-padding-16" type="numero" placeholder="numero de mesa"  name="Idmesa"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Especifica tu orden"  name="IdOrden"></p>
+      <p><button class="w3-button w3-light-grey w3-section"  type="submit">ENVIAR PEDIDO</button></p>
+    </form>
+
+    <script src="script.js"></script>
+
+  </div>
+  
+<!-- End page content -->
+</div>
+
+
+
+</body>
+</html>
